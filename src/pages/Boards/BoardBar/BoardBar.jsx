@@ -44,7 +44,6 @@ const BoardBar = () => {
         gap: 2,
         overflowX: 'auto ',
         bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#34495e' : '#1976d2'),
-        borderBottom: '1px solid #00bfa5',
         paddingX: 2
       }}
     >
@@ -105,7 +104,9 @@ const BoardBar = () => {
               height: 32,
               fontSize: 16,
               color: 'white',
-              border: 'none'
+              border: '2px solid #fff',
+              cursor: 'pointer',
+              '&:first-of-type': { bgcolor: '#a4b0be' }
             }
           }}
           max={3}
